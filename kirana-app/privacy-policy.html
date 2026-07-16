@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Kirana Billing &amp; Stock</title>
+  <meta name="description" content="Privacy Policy for the Kirana Billing & Stock Android app by Cubistack." />
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --ink: #1a2233;
+      --muted: #5a6478;
+      --accent: #1d4ed8;
+      --accent-ink: #1e40af;
+      --accent-soft: #eaf0fe;
+      --border: #e4e7ee;
+      --rule: #eef0f5;
+      --good: #15803d;
+      --good-soft: #e7f4ec;
+      --shadow: 0 1px 2px rgba(16, 24, 45, .04), 0 12px 32px rgba(16, 24, 45, .06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e131f;
+        --surface: #161d2b;
+        --ink: #e8ecf4;
+        --muted: #99a3b7;
+        --accent: #7aa2ff;
+        --accent-ink: #9bb8ff;
+        --accent-soft: #1a2540;
+        --border: #273149;
+        --rule: #1e2839;
+        --good: #56d08a;
+        --good-soft: #14251c;
+        --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 16px 40px rgba(0, 0, 0, .35);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0e131f; --surface: #161d2b; --ink: #e8ecf4; --muted: #99a3b7;
+      --accent: #7aa2ff; --accent-ink: #9bb8ff; --accent-soft: #1a2540;
+      --border: #273149; --rule: #1e2839; --good: #56d08a; --good-soft: #14251c;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px rgba(0,0,0,.35);
+    }
+    :root[data-theme="light"] {
+      --bg: #f6f7fb; --surface: #ffffff; --ink: #1a2233; --muted: #5a6478;
+      --accent: #1d4ed8; --accent-ink: #1e40af; --accent-soft: #eaf0fe;
+      --border: #e4e7ee; --rule: #eef0f5; --good: #15803d; --good-soft: #e7f4ec;
+      --shadow: 0 1px 2px rgba(16,24,45,.04), 0 12px 32px rgba(16,24,45,.06);
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: clamp(20px, 5vw, 56px) clamp(18px, 5vw, 28px) 72px; }
+
+    /* Header */
+    header { display: flex; flex-direction: column; gap: 18px; padding-bottom: 26px; border-bottom: 1px solid var(--border); }
+    .brandrow { display: flex; align-items: center; gap: 14px; }
+    .mark {
+      width: 46px; height: 46px; border-radius: 12px; flex: none;
+      background: linear-gradient(150deg, var(--accent), var(--accent-ink));
+      display: grid; place-items: center; color: #fff; box-shadow: var(--shadow);
+    }
+    .mark svg { width: 24px; height: 24px; }
+    .brandmeta { display: flex; flex-direction: column; }
+    .eyebrow { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); font-weight: 700; }
+    .brandmeta .app { font-size: 1.02rem; font-weight: 650; color: var(--ink); }
+    h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.12; letter-spacing: -.02em; margin: 4px 0 0; text-wrap: balance; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: .86rem; color: var(--muted); }
+    .meta b { color: var(--ink); font-weight: 600; }
+
+    /* At a glance */
+    .glance { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 6px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px; border-radius: 999px;
+      background: var(--good-soft); color: var(--good);
+      font-size: .86rem; font-weight: 600; border: 1px solid color-mix(in srgb, var(--good) 22%, transparent);
+    }
+    .chip svg { width: 15px; height: 15px; }
+
+    /* Sections */
+    main { margin-top: 30px; display: flex; flex-direction: column; gap: 34px; }
+    section { scroll-margin-top: 20px; }
+    h2 {
+      display: flex; align-items: baseline; gap: 12px;
+      font-size: 1.2rem; font-weight: 650; letter-spacing: -.01em; margin: 0 0 12px;
+    }
+    h2 .num {
+      flex: none; width: 26px; height: 26px; border-radius: 8px; align-self: center;
+      background: var(--accent-soft); color: var(--accent-ink);
+      font-size: .82rem; font-weight: 700; font-variant-numeric: tabular-nums;
+      display: grid; place-items: center;
+    }
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--accent-ink); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+    a:hover { border-bottom-color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+    strong { font-weight: 650; }
+
+    ul { margin: 4px 0 14px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    li { position: relative; padding-left: 22px; }
+    li::before { content: ""; position: absolute; left: 4px; top: .72em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    li b { font-weight: 650; }
+
+    /* Callout */
+    .callout {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+      padding: 18px 20px; box-shadow: var(--shadow); display: flex; gap: 14px; align-items: flex-start;
+    }
+    .callout .ico { flex: none; width: 34px; height: 34px; border-radius: 9px; background: var(--accent-soft); color: var(--accent-ink); display: grid; place-items: center; }
+    .callout .ico svg { width: 18px; height: 18px; }
+    .callout p { margin: 0; font-size: .96rem; }
+
+    /* Contact */
+    .contact { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px 22px; box-shadow: var(--shadow); }
+    .contact .email {
+      display: inline-flex; align-items: center; gap: 9px; margin-top: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95rem;
+      font-weight: 600; color: var(--accent-ink);
+    }
+    .contact .email svg { width: 16px; height: 16px; }
+
+    footer { margin-top: 46px; padding-top: 22px; border-top: 1px solid var(--border); font-size: .82rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: space-between; }
+
+    @media (max-width: 480px) { body { font-size: 16px; } .meta { gap: 6px 14px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brandrow">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-4.5h15L21 9"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><path d="M9 20v-6h6v6"/></svg>
+        </div>
+        <div class="brandmeta">
+          <span class="eyebrow">Privacy Policy</span>
+          <span class="app">Kirana Billing &amp; Stock</span>
+        </div>
+      </div>
+      <h1>How this app handles your data</h1>
+      <div class="meta">
+        <span>Developer: <b>Cubistack</b></span>
+        <span>Platform: <b>Android</b></span>
+        <span>Last updated: <b>16 July 2026</b></span>
+      </div>
+    </header>
+
+    <div class="glance">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Works fully offline</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Your data stays on your device</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> No login or account</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> We never sell your data</span>
+    </div>
+
+    <main>
+      <section>
+        <div class="callout">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+          <p><strong>The short version.</strong> Kirana Billing &amp; Stock is an offline-first app for running a small shop — billing, inventory, sales, and customer credit (udhaar). Everything you enter is stored only on your phone. Cubistack does not run any server for this app and never receives or sells your business or customer data. The only third parties involved are Google (for ads and the optional in-app purchase), described below.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="num">1</span> Information in the app</h2>
+        <p>The app has no sign-up and no user accounts. You choose what to enter, and it is saved to a private database on your device. This can include:</p>
+        <ul>
+          <li><b>Shop details</b> — shop name, phone number, GST number, logo image, payment link, and payment QR image.</li>
+          <li><b>Inventory</b> — product names, categories, cost and selling prices, and stock quantities.</li>
+          <li><b>Sales</b> — the bills you record, including items, quantities, discounts, and totals.</li>
+          <li><b>Customers &amp; credit (udhaar)</b> — customer names and phone numbers you add, and the credit/payment entries you record for them.</li>
+          <li><b>Preferences</b> — language, currency, theme color, and whether you have removed ads.</li>
+        </ul>
+        <p>You control this information: individual products, customers, sales, and credit entries can be deleted from within the app at any time.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">2</span> Where your data is stored</h2>
+        <p>All of the above is stored <strong>locally on your device</strong> in the app's private storage (an on-device SQLite database), including images such as your logo and QR code. The app is offline-first and does not upload this data to Cubistack or anyone else. It never leaves your device unless <em>you</em> choose to send it — for example, sharing a reminder or payment link over WhatsApp (see Section 6).</p>
+      </section>
+
+      <section>
+        <h2><span class="num">3</span> Advertising (Google AdMob)</h2>
+        <p>The free version of the app shows advertisements provided by <strong>Google AdMob</strong> (banner ads and occasional full-screen ads). To serve and measure ads, Google's AdMob SDK may collect information such as your device's advertising identifier, IP address, general device information, and app-usage signals. This processing is governed by Google's policies:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google uses information from AdMob</a></li>
+        </ul>
+        <p>Where required (for example in the EEA and UK), a consent prompt may appear before personalized ads are shown. If you purchase <strong>Remove Ads</strong> (Section 4), the app stops requesting ads.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">4</span> In-app purchase (Remove Ads)</h2>
+        <p>The app offers a single optional, one-time purchase — <strong>Remove Ads</strong> — handled entirely by <strong>Google Play Billing</strong>. Google processes the payment; Cubistack does not see or store your card, bank, or payment details. The app only receives a confirmation that the purchase succeeded and saves a small flag on your device so ads stay off. Your purchase is tied to your Google account, which is how it can be restored after reinstalling or on a new device.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">5</span> Permissions</h2>
+        <p>The app requests the minimum permissions it needs:</p>
+        <ul>
+          <li><b>Photos / media</b> — only when you choose to add a shop logo or payment QR image from your gallery. The selected image is saved on your device and is not uploaded anywhere.</li>
+          <li><b>Internet</b> — used to load ads and to process the optional purchase. Your shop, sales, and customer data are not sent over the internet by the app.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="num">6</span> Sending messages via WhatsApp</h2>
+        <p>The app can help you send a payment reminder or a payment link to a customer. When you do this, the app simply opens <strong>WhatsApp</strong> with a message pre-filled for the phone number you selected — you review and send it yourself. Cubistack does not transmit these messages or numbers to any server. Your use of WhatsApp is governed by WhatsApp's own privacy policy.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">7</span> Data sharing &amp; disclosure</h2>
+        <p>Cubistack does not sell, rent, or trade your data, and does not receive your business or customer information in the first place. The only data processing by others is by <strong>Google</strong> (AdMob and Google Play Billing) as described above, under Google's own policies. We may disclose information only if required to comply with a valid legal obligation — though, because your app data lives solely on your device, we do not hold it to disclose.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">8</span> Data retention &amp; deletion</h2>
+        <p>Because your data is stored only on your device, <strong>you</strong> control its lifetime. Deleting a record removes it from the app. <strong>Uninstalling the app permanently deletes all of its data</strong> from your device. There is no server-side copy held by Cubistack to request deletion of. Ad and purchase data held by Google can be managed through your Google account settings.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">9</span> Children's privacy</h2>
+        <p>Kirana Billing &amp; Stock is a business tool intended for shopkeepers and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">10</span> Security</h2>
+        <p>Your data is kept in the app's private, sandboxed storage on your device, which other apps cannot access. No method of storage is perfectly secure, so we recommend protecting your phone with a screen lock. Since the data is on your device only, keeping your device secure is the best way to protect it.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">11</span> Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page, and significant changes may also be noted on the app's Google Play listing. Continued use of the app after an update means you accept the revised policy.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">12</span> Contact us</h2>
+        <div class="contact">
+          <p>If you have any questions about this Privacy Policy or how the app handles your data, please get in touch:</p>
+          <a class="email" href="mailto:support.cubistack@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            support.cubistack@gmail.com
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Cubistack — Kirana Billing &amp; Stock</span>
+      <span>This policy applies to the Kirana Billing &amp; Stock mobile app.</span>
+    </footer>
+  </div>
+</body>
+</html>
